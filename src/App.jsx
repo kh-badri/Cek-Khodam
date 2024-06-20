@@ -3,33 +3,34 @@ import { Button, Input, Dialog, DialogHeader, DialogBody, DialogFooter } from "@
 import { useState } from "react";
 
 const ListKhodam = [
-  "Sepeda Listrik",
   "Harimau Sumatra",
+  "Aligator",
+  "Drakk Sistem",
   "Kereta Api",
+  "Jamet",
   "Macan Garut",
-  "Domba Kuring",
+  "Kosong",
+  "Domba Racing",
+  "Bocil Ep Ep",
+  "Kak Gem",
+  "Tuyul",
+  "Drakk Sistem",
+  "Lalat Hijau",
   "Singa",
-  "Gedung Fasilkom",
   "Jerapah",
   "Kucing Oren",
-  "Tidak Ada",
-  "Tidak Ada",
-  "Tidak Ada",
-  "Tidak Ada",
-  "Ayam Geprek Sriwedari",
-  "Tunas Kelapa",
+  "Harimau Sumatra",
+  "Kosong",
+  "Kak Gem",
+  "kosong",
   "Kambing Guling",
   "Babi Hutan",
-  "Cangkul",
-  "Abe",
-  "Pop Mie",
-  "Aligator",
-  "Tisu Basah",
-  "Galon",
-  "Ember",
-  "Tusuk Sate",
-  "Dont Look Back in Anger",
-  "Radiohead",
+  "Kosong",
+  "Tuyul",
+  "Kak Gem",
+  "Jamet",
+  "Drakk Sistem",
+  "Lalat Hijau",
 ];
 
 export default function App() {
@@ -47,8 +48,8 @@ export default function App() {
       const randomKhodam = filteredKhodam[Math.floor(Math.random() * filteredKhodam.length)];
       let imageUrl = "";
       setKhodam(randomKhodam);
-      if (randomKhodam === "Tidak Ada") {
-        imageUrl = "/img/tidakada.jpeg";
+      if (randomKhodam === "kosong") {
+        imageUrl = "/img/kosong.jpeg";
       } else {
         const formattedKhodam = randomKhodam.toLowerCase().replace(/ /g, "-");
         imageUrl = `/img/${encodeURIComponent(formattedKhodam)}.jpeg`;
@@ -94,7 +95,7 @@ function Result({ open, handleOpen, nama, khodam, namaKhodam }) {
       <DialogBody>
         <h3 className="text-xl font-medium">Nama: {nama}</h3>
         <h4 className="text-xl font-medium">
-          Memiliki Khodam: <span className="font-semibold">{namaKhodam}</span>
+          Kamu Memiliki Khodam: <span className="font-semibold">{namaKhodam}</span>
         </h4>
         <div className="flex justify-center">
           <img src={khodam} alt={namaKhodam} className="mt-5 rounded-lg shadow-md text-center justify-center" />
