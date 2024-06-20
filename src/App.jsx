@@ -6,7 +6,7 @@ const ListKhodam = [
   "Harimau Sumatra",
   "Aligator",
   "Drakk Sistem",
-  "Kereta Api",
+  "Bakwan",
   "Jamet",
   "Macan Garut",
   "Kosong",
@@ -22,6 +22,7 @@ const ListKhodam = [
   "Harimau Sumatra",
   "Kosong",
   "Kak Gem",
+  "Bakwan",
   "kosong",
   "Kambing Guling",
   "Babi Hutan",
@@ -30,6 +31,7 @@ const ListKhodam = [
   "Kak Gem",
   "Jamet",
   "Drakk Sistem",
+  "Bakwan",
   "Lalat Hijau",
 ];
 
