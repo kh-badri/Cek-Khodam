@@ -78,7 +78,10 @@ export default function App() {
               Submit
             </Button>
             <div className="mt-5">
-              <p className="italic text-center text-white">Created by Kh-Badri</p>
+              <p className="italic text-center text-white">
+                {" "}
+                <a href="https://www.instagram.com/kh_badri_?igsh=cjg4aW45MzF3Mnhm">Created by Kh-Badri</a>
+              </p>
             </div>
             <Result open={open} handleOpen={handleOpen} nama={nama} khodam={khodamImageUrl} namaKhodam={khodam} />
           </div>
